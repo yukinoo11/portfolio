@@ -77,7 +77,9 @@ const Infomation = () => {
                             <div className={styls.description}>
                                 <ul>
                                     <li><label>프로젝트명</label>포트폴리오 사이트</li>
+                                    {/*
                                     <li><label>Github</label>https://github.com/yukinoo11/portfolio</li>
+                                    */}
                                     <li><label>Link</label>mcgo.cafe24App.com</li>
                                     <li><label>개발환경</label>Express(Node.js), Javascript(ES6), Javascript, scss, MySQL</li>
                                     <li><label>담당업무</label>포트폴리오 DB구현, 

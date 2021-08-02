@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import MetaTags from 'react-meta-tags';
 import AdminApp from './admin/Index';
-import MainApp from './main/index';
 import WebSite from './webSite/WebSite';
-import SignIn from './admin/SignIn';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import RestrictRoute  from "./api/component/RestricRoute";
 
 class App extends Component {
   render(){
@@ -19,9 +16,12 @@ class App extends Component {
         
         <Router>
             <Switch>
+              {/*
               <Route exact path='/yukinoo11Main' component = { MainApp } />
-              <RestrictRoute component={AdminApp} path="/admin" exact />
               <Route exact path='/signin' component = { SignIn } />
+              */}
+              <Route exact path="/admin9756" component={AdminApp} />
+              
               <Route path='/admin/:id' component = { AdminApp } />
               
               {/*
