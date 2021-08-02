@@ -1,0 +1,24 @@
+.userContainer{
+    position:absolute;
+    right: 7px;
+    top: 9px;
+	z-index: 100;
+}
+ .userContainer > section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ .userContainer > section > .my-info{
+    font-size: .9em;
+    font-weight: 600;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.userContainer > section > .avatar-conatiner > .avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

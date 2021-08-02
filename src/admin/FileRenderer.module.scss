@@ -1,0 +1,43 @@
+
+.deleteBtn{
+    position:absolute;
+    right: 2px;
+    top:2px;
+    background: #fff;
+    border-radius: 4px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    input[type='checkbox']{
+        border: 1px solid #333;
+        border-radius: 5px;
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.fileImg{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.fileName{
+    font-size: .9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+    flex-basis: 20px;
+}

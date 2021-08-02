@@ -1,0 +1,33 @@
+html{
+	-webkit-text-size-adjust: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size:12px;
+}
+h1{
+	font-size:14px;
+	text-align:center;
+	background-color:#333;
+	padding:10px 5px 10px 20px;
+	color:#fff;
+}
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+	text-align: center;
+	display: block;
+	border-top: 1px solid #ccc;
+	padding: 20px 0;
+	clear: both;
+}
+

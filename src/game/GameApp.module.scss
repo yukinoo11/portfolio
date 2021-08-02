@@ -1,0 +1,83 @@
+@import './../css/mixins';
+
+.wrap{
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    width: 640px;
+    
+
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+        li{
+            background-color: #fff;
+        }
+    }
+}
+@include mobile{
+    .list{
+        width: 100%;
+        ul{
+            grid-template-columns: 1fr;
+            grid-gap: 5px;
+        }
+    }
+}
+
+dl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    dd{
+        width: 100%;
+        text-align: center;
+    }
+    .title{
+        font-size: 1.1em;
+        font-weight: 700;
+        margin: 3px 0;
+    }
+
+    .category{
+        font-size: .9em;
+    }
+
+    .count{
+        border-top:1px solid #eee;
+        color: #555;
+        margin-top: 7px;
+        padding: 5px 0;
+        font-size: .8em;
+        display: flex;
+        font-weight: 600;
+    }
+
+    .playCount{
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px 0 5px;
+        background: url('/images/playercount.png') no-repeat;
+    }
+}
+dt{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.container{
+    margin: 80px auto 0 auto;
+}
+.footer{
+    margin-top: 20px;
+    background-color: #555;
+}
+
+

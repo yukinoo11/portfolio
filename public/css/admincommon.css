@@ -1,0 +1,63 @@
+html {
+	-webkit-text-size-adjust: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 15px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	table-layout: fixed;
+	display: table;
+	margin: 0 20px;
+	height: 100%;
+}
+
+#menu li {
+	height: 100%;
+	font-size: 18px;
+	display: table-cell;
+	color: #fff;
+	padding: 0 15px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#menu li:hover,
+#menu li:focus,
+#menu li.select {
+	background: url('./../images/menuSelectedBg.png') repeat-x left bottom;
+	background-color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.top {
+	height: 80px;
+	background-color: #484860;
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	display: block;
+	border-top: 1px solid #ccc;
+	padding: 20px 0;
+	clear: both;
+}

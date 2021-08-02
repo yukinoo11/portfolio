@@ -1,0 +1,141 @@
+.topNavigation{
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 0 6px rgb(0 0 0 / 30%);
+    height: 55px;
+    display: flex;
+    /*
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 98;
+    */
+  }
+  
+  .topNavigation > section{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 10px;
+    color: #000;
+  }
+  .topNavigation > section .prevIcon{
+    transform: scale(.7);
+    fill: #ddd; 
+    -webkit-transition: fill 0.5s; /* Safari */
+    transition: fill 0.5s;
+  }
+  .topNavigation > section .prevIcon:hover{
+    fill: #fff;
+  }
+  .topNavigation > section > .header-icon{
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topNavigation > section .header-title{
+    flex: 1;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  
+  .topNavigation > section a,
+  .topNavigation > section button{
+    display: flex;
+    justify-content: center;
+    border: 0;
+    background: transparent;
+  }
+
+
+  /** Navigation **/
+.navigation > section {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient( 0.25turn,  #4362cc, #8a3dbd);
+}
+.navigation button{
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background-color: #6c757d;
+  border-radius: .3em;
+  border: 1px solid #ccc;
+  margin: auto;
+  background:#fff;
+}
+
+.navigation button img{
+  height: 20px;
+}
+.navigation > section > .control-left,
+.navigation > section > .control-right {
+  flex-basis : 55px;
+  align-items: center;
+  display: flex;
+}
+
+.navigation > section > .control-text{
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #fff;
+}
+.navigation-menu {
+  display:flex;
+  margin:10px;
+  flex-direction: column;
+}
+.navigation-menu>li>a,
+.menu-container > section li{
+  display: flex;
+  color: #eaedf2;
+  background-color: #2e3650;
+  border: .0625rem solid #4c5680;
+  vertical-align: middle;
+  padding: .55rem .75rem;
+  border-radius: .5rem;
+  margin: .2em 0;
+}
+.navigation-menu>li>a:hover,
+.navigation-menu>li>a:focus,
+.navigation-menu>li>a.active,
+.menu-container > section li:hover,
+.menu-container > section li:focus,
+.menu-container > section li:active {
+  cursor: pointer;
+}
+
+.menu-container{
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    z-index: 97;
+    width: 50%;
+    background-color: #262b40;
+    transition: .5s;
+    padding-top: 50px;
+}
+
+.menu-container > header > button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+    border:0;
+    background: transparent;
+    z-index: 98;
+}
+.menu-container > section{
+  margin: 20px;
+}

@@ -1,0 +1,44 @@
+.wrap{
+    
+    ul{
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax(150px, auto));
+        grid-gap: 5px;
+    }
+    li{
+        position: relative;
+        box-sizing: content-box;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+
+        img{
+            max-height: 100px;
+            overflow: hidden;
+        }
+    }    
+
+}
+
+
+.header{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button{
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        padding: 3px 10px 3px 5px;
+        background-color: #fff;
+        border: 1px solid #333;
+        border-radius: 5px;
+    }
+}

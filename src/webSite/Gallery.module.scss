@@ -1,0 +1,62 @@
+@import './../css/mixins';
+$topHeight : 50px;
+
+.gallery{
+    position: relative;
+    top: $topHeight;
+    display: flex;
+    flex-direction: column;
+
+    .navi{
+        padding: 20px 10px 0 10px;
+    }
+
+    .content{
+        margin: 0 20px;
+
+        ul{
+            box-sizing: content-box;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-gap: 36px;
+        }
+    
+        li{
+            box-sizing: content-box;
+    
+            a{
+                opacity: 1;
+                transform:  translateY(0px);
+                animation-name: show;
+                animation-duration: 3s;
+            }
+        }
+    }
+}
+
+.loading{
+    margin: 200px auto 0 auto;
+}
+
+@include mobile{
+    .imgBox{
+        border-radius: 0;    
+    }
+    .content{
+        ul{
+            grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        }
+    }
+}
+
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform:  translateY(300px);
+    }
+    100% {
+        opacity:1;
+        transform:  translateY(0px);
+    }
+}

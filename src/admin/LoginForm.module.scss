@@ -1,0 +1,33 @@
+.loginForm{
+
+    width: 500px;
+    margin-top: 50px;
+    margin: 50px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    h1{
+        margin: 20px 0;
+    }
+
+    .input{
+        border: 1px solid #aaa;
+        padding: 0.6em .5em;
+        box-sizing: border-box;
+        color: #555;
+        outline: none;
+        background-color: #fff;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    button{
+        height: 60px;
+    }
+
+    .loginImg{
+        height: 240px;
+        background: url('/images/userimg.png') no-repeat center;
+    }
+}

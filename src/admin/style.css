@@ -1,0 +1,127 @@
+.Admin{
+    display: flex;
+    flex-direction: column;
+}
+/*******************************************
+                  MENU
+*******************************************/
+.QuizWrap{
+    position: relative;
+    top: 57px;
+}
+/** menu-container **/
+.Admin > .menu-container,
+.QuizWrap > .menu-container{
+    position: fixed;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    z-index: 97;
+    width: 50%;
+    background-color: #262b40;
+    transition: .5s;
+    padding-top: 50px;
+}
+
+.Admin > .menu-container > .userContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Admin > .menu-container > .userContainer > section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+}
+.Admin > .menu-container > .userContainer > section > .my-info{
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.Admin > .menu-container > .userContainer > section > .avatar-conatiner > .avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.Admin > .menu-container > button{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+    border:0;
+    background: transparent;
+    z-index: 98;
+}
+
+.Admin .card-top-head{
+    font-size: .5em;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+}
+.Admin > .content .content-inner-wrap{
+    margin: 0 auto;
+    height: 100%;
+    flex: 1;
+    width: 90%;
+}
+.Admin > .content .content-inner-wrap > .page-wrap{
+    margin: 10px 0;
+}
+.Admin > .content .content-inner-wrap table .subject{
+    text-align: left;
+    line-height: 1.4em;
+}
+.Admin > .content .content-inner-wrap tr{
+    cursor: pointer;
+}
+
+.button_anwer_wrong{
+
+}
+
+.ListQuiz > footer{
+    display: flex;
+    padding-top: 10px;
+    border-top:1px solid #ddd;
+}
+.ListQuiz > footer > button {
+    margin-right: 10px;
+}
+.ListQuiz > .submitWrap{
+    justify-content: center;
+}
+
+.ListQuiz .page-wrap{
+    margin: 10px 0;
+}
+.ListQuiz .paging-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ListQuizMain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+}
+
+.ListQuiz .footer{
+    display: flex;
+    margin-top: 20px;
+}
+
+.ListQuiz .footer button{
+    margin-right: 5px;
+    border: 1px solid #4362cc;
+}
+

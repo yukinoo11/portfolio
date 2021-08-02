@@ -1,0 +1,67 @@
+.topNavigation{
+    position: relative;
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    box-shadow: 1px 0 6px #ddd;
+    height: 55px;
+    z-index: 100;
+
+    .logo{
+        position:absolute;
+        top: 10px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 180px;
+        height: 33px;
+        margin: auto;
+
+        img{ 
+            max-width: 100%;
+        }
+    }
+
+    & .container{
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+
+        &.prevIcon{
+            width: 25px;
+            fill: #ddd; 
+            -webkit-transition: fill 0.5s; /* Safari */
+            transition: fill 0.5s;
+        }
+
+        & .header-icon{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    & button{
+        background: transparent;
+        border: none;
+    }
+}
+
+.MobileMenuContainer{
+    position: absolute;
+    border-top: 1px solid #eee;
+    padding: 23px;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+    overflow: scroll;
+    height: calc(100vh - 60px);
+    background-color: #fff;
+
+    & .inner{
+        margin: 20px;
+    }
+    & li{
+        font-size: 1.3em;
+        padding: 12px 0;
+    }
+}

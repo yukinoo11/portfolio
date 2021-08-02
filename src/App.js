@@ -4,7 +4,6 @@ import AdminApp from './admin/Index';
 import MainApp from './main/index';
 import WebSite from './webSite/WebSite';
 import SignIn from './admin/SignIn';
-import Infomation from "./portfolio/Information";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import RestrictRoute  from "./api/component/RestricRoute";
 

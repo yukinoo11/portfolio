@@ -1,0 +1,70 @@
+.StudyMain{
+    overflow: hidden;
+    display: flex;  
+    flex-direction: column;
+    height: 100%;
+  }
+  .StudyMain > header{
+    background:linear-gradient( 0.25turn,  #4362cc, #8a3dbd);
+    color: #fff;
+    display: flex;
+    flex-basis: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .StudyMain > header > span{
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  
+  .StudyMain > header > .dday{
+    font-size: 30px;
+  }
+  .StudyMain > footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    flex-basis: 80px;
+    background-color: #fff;
+  }
+  .StudyMain > section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+  }
+  .StudyMain .count{
+    background-color: #fff;
+    border: 1px solid #4362cc;
+    border-radius: 5px;
+    color: #4362cc;
+    padding: 0.5em 0;
+    text-align: center;
+    width: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 10px;
+  }
+  .StudyMain > section > ul > li:hover{
+    background-color: #e7e0f4;
+  }
+  .StudyMain > section > ul{
+    margin: 0;
+  }
+  .StudyMain > section > ul > li{
+    margin: 0 auto;
+    display: flex;
+    
+  }
+  .StudyMain > section ul > li > a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: .8em 0 .8em 0;
+    font-weight: 600;
+    font-size: 1em;
+    color: #111;
+    border-bottom: 1px solid #dfdfdf;  
+  }
+  

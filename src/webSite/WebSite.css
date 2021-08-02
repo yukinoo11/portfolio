@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Yantramanav&display=swap');
+.web{
+    font-family: 'Yantramanav', sans-serif;
+    color: #6e6d7a;
+    display: block;
+    position: relative;
+}
+.web .content{
+    padding-top : 50px;
+    margin: 0 20px;
+}
+
+.web > .content > ul > li > div{
+    margin: 3px;
+}
+
+.web .header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #fff;
+    height: 50px;
+    border-bottom: 1px solid  #fff;
+    box-shadow: 1px 1px 3px #ddd;
+}
+.box-date{
+    font-size: .8em;
+    color: #666;
+    padding: 1em;
+}
+
+.open {
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+
+.box-footer{
+    background-color: #fff;
+}
+
+
+.shot-media-container header h1{
+    font-size: 1.3em;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.date{
+    color: #999;
+    font-family: 'Yantramanav', sans-serif;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}

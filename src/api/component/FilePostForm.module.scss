@@ -1,0 +1,101 @@
+$color : #999;
+$fontSize : 1em;
+$imgWidth : 100px;
+
+.file{
+    display:flex;
+    flex-direction: row;
+
+    .form{
+        border-radius: 5px;
+        border: 1px solid $color;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+        flex: 1;
+
+        .info{
+            display: flex;
+            align-items: center;
+            flex: 1;
+            padding: 0 20px;
+        }
+    }
+}
+
+.fileForm{
+
+    display: flex;
+    align-items: center;
+
+    input[type = "file"]{
+        position:absolute;
+        width: 0;
+        height: 0;
+        border: 0;
+    }
+
+    input[type = "text"]{
+        position:absolute;
+        width: 0;
+        height: 0;
+        border: 0;
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        border: none;
+        height: 100%;
+        padding: 1px 20px;
+        background: #eee;
+        box-sizing: border-box;
+        transition: background .2s;
+        border-right: 1px solid $color;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+        }
+    }
+}
+
+.buttonArea{
+    button{
+        border: none;
+        height: 100%;
+        font-weight: 600;
+        padding: 1px 20px;
+        background: #eee;
+        box-sizing: border-box;
+        transition: background .2s;
+        border-left: 1px solid $color;
+        cursor: pointer;
+        &:hover{
+            background-color: #eee;
+        }
+    }
+}
+.left{
+    border-radius: 5px 0 0 5px;
+    border-right: 1px solid $color;
+}
+
+.right{
+    border-radius: 0 5px 5px 0;
+    border-left: 1px solid $color;
+}
+
+.imgViewer{
+    display: flex;
+    flex-basis: $imgWidth;
+    justify-content: center;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+
+    img{
+        max-width: $imgWidth;
+        max-height: $imgWidth;
+    }
+}

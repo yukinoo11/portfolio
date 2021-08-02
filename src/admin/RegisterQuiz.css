@@ -1,0 +1,92 @@
+.content-view{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.content-view > .row{
+	display: flex;
+	flex-direction: column;
+}
+.content-view > .column{
+    display: flex;
+    flex-direction:row;
+    padding: 7px 0;
+}
+.content-view > .column > label,
+.content-view > .column > .block,
+.content-view > .row textArea{
+    flex: 1;
+}
+
+.content-view > .row > label{
+    font-weight: 700;
+    font-size: .9em;
+    padding: 5px 0 0 0;
+}
+.content-view > .row > .block{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 0.5em 0;
+    margin: .1em 0;
+}
+
+.content-view > .row > .block > label{
+    font-weight: 700;
+    font-size: .9em;
+    flex-basis: 70px;
+}
+.content-view > .row > .block > span{
+    flex: 1;
+}
+
+.content-view > .row > .block img{
+    width: 40px;
+}
+.content-view > .row .editBtn{
+    padding: 0.2em 1.2em;
+    margin-left: 10px;
+}
+.content-view > .column input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.content-view > .submitWrap{
+    display: flex;
+    flex-basis: 50px;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.content-view > footer > .cancel:hover{
+    background-color: #c20900;
+    color: #fff;
+}
+
+.content-view select{
+    flex: 1;
+}
+
+.notice {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.notice > .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.notice > .messageStyle{
+    color: #ff0000;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+    flex: 1;
+}
+.notice > .footer button{
+    margin: 0 2px;
+}

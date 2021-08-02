@@ -1,0 +1,30 @@
+.ImgViewerComponent{
+  position: relative;
+  display: block;
+  padding: .3em .85em;
+}
+.ImgViewerComponent:after{
+  clear: left;
+}
+.ImgViewerComponent img{
+  max-width: 100px;
+  margin-right: 10px;
+}
+
+.ImgViewerComponent input[type=file]{
+  display:none;
+}
+
+.input-box-container{
+  top: 1em;
+  left: 120px;
+  height: 100%;
+  box-sizing:border-box;
+}
+
+
+.input-box-container .red-ft{
+}
+.red-ft{
+  color:chocolate;
+}

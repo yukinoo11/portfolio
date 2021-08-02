@@ -1,0 +1,149 @@
+.paginationControls{
+    display:inline-block;
+}
+.pageWrap{
+    font-size: 11px;
+}
+.pageBtn
+{
+    transition: background-color .3s;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    border-left: 0;
+    color: black;
+    background-color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+.pageBtn:hover {
+    background-color: #e9ecef;
+}
+
+.active{
+    background-color: #3b7ddd;
+}
+
+.btn
+{
+    transition: background-color .3s;
+    border: 1px solid #444;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #555;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #999;
+}
+.btn:active{
+    background-color: #fff;
+}
+.left{
+    border:1px solid #dee2e6;
+    border-radius:4px 0 0 4px;
+}
+.right{
+    border-right:1px solid #dee2e6;
+    border-radius:0 4px 4px 0;
+}
+
+.round-border{
+    box-sizing: border-box;
+    background-color: #eee;
+}
+
+.spanKey{
+    flex-basis: 40px;
+    border-right: 1px solid #ddd;
+    margin-right: 8px;
+}
+/** 카테고리 리스트 */
+.category-wrap{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.category-top-wrap{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.category-list-wrap{
+    display: block;
+	line-height: 1.5em;
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.category-input-wrap{
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.category-input-wrap .btn,
+.category-input{
+	margin: 10px 5px 0 0;
+}
+.category-label{
+	margin: 0 20px 0 0;
+}
+.category-list-wrap li{
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 3px;
+    border:1px solid #ddd;
+    background-color: #fff;
+}
+
+.categoryFooter{
+    background-color: tomato;
+    display: inline-table;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.top input[type='text']{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.bottom{
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    padding: 10px 0 0 0;
+ }
+ .bottom > button{
+     margin: 0 2px;
+ }
+ .flex1{
+     flex: 1;
+ }
+
+ .table{
+    border-collapse: collapse;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table thead th{
+    font-size: 12px;
+    border-bottom: 2px solid #dee2e6;
+  }
+  .table td, .table th{
+    padding: .75em;
+    line-height: 1em;
+    border-top:1px solid #dee2e6;
+    text-align: center;
+  }
+  
+  .table tbody tr:hover{
+    background-color: #f4f4f4;
+  }
+  

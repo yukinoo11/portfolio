@@ -1,0 +1,20 @@
+/*******************************************
+                  MENU
+*******************************************/
+.user{
+  display: flex;
+  float: right;
+  vertical-align: middle;
+}
+.user-img{
+  float:left
+}
+.user-img img{
+  max-height: 50px;
+}
+.user-name{
+  float:left;
+  color: #fff;
+  font-weight: 500;
+}
+

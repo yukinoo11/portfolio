@@ -1,0 +1,36 @@
+.menuWrap{
+    background-color: #fff;
+    padding: 10px;
+    max-width: 350px;
+    margin: auto;
+}
+
+.menuWrap li{
+    display: block;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.menuWrap a{
+    display: block;
+    width: 100%;
+    padding: 1.2em 0;
+    color: #fff;
+    border-radius: 0.3em;
+    font-weight: 700;
+    color: #8f59d7;
+    background-color: #fff;
+    border: 1px solid #8f59d7;
+    cursor: pointer;
+    transition-property: box-shadow, color, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.menuWrap a:hover{
+    color: #fff;
+    box-shadow: 1px 1px 5px 0 #eee;
+    background-color: #8f59d7;
+}

@@ -1,0 +1,207 @@
+.wrap{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.stage_wrap{
+  position: absolute;
+  top:10px;
+  left:50%;
+  transform: translate(0,20px);
+  background-color: hotpink;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stage-count{
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  flex:.1;
+}
+
+.round{
+  border-radius: 5px;
+  padding: 2px 1.2em;
+  background-color: chocolate;
+}
+
+
+/**결과페이지**/
+.reuslt-wrap{
+  color: #ff0000;
+  font-weight: 500;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.reuslt-wrap > span {
+  margin: 0;
+}
+.reuslt-wrap > span > img{
+  width: 200px;
+}
+
+.openResult{
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: result-show 0.3s;
+}
+
+.closeResult{
+  opacity: 0;
+}
+
+/** 결과 페이지**/
+.result-box{
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+}
+.result-box > header{
+  display: flex;
+  background: linear-gradient( 0.25turn,  #4362cc, #8a3dbd);
+  text-align: center;
+  color: #fff;
+  flex-basis: 50px;
+  align-items: center;
+}
+.result-box > header > h1{
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  flex: 1;
+  text-align: left;
+}
+.result-box > header button {
+  font-size: 50px;
+  border: 0;
+  color: #fff;
+  margin-right: 20px;
+  background: transparent;
+}
+.result-box > section {
+  flex: 1;
+
+}
+.result-box > footer {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+.result-box > section > .result-box-inner{
+  background-color: #fff;
+  margin: 25px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.result-item{
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  color: #999;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.wrong{
+  color: #fff;
+  border: 1px solid crimson;
+  background-color: crimson;
+}
+.right{
+  color: #fff;
+  border: 1px solid #5a9abe;
+  background-color: #5a9abe;
+}
+.result-item .red{
+  color: #f00;
+}
+.result-item-body{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.result-box > section > .result-state{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.result-state label{
+  color: #000;
+  font-weight: 700;
+}
+.result-state span{
+  border-radius: 3px;
+  padding:5px 10px;
+  color: #fff;
+  margin: 0 5px;
+  width: 20px;
+  text-align: center;
+}
+.result-state-yes{
+  background-color: #5a9abe;
+}
+.result-state-no{
+  background-color: crimson;
+}
+.fadeIn{
+  animation: fade-in 0.2s;
+}
+.fadeOut{
+  
+}
+
+
+@keyframes result-show {
+  0%{
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 모바일에 적용될 스타일을 먼저 작성합니다. */
+
+@media screen and (min-width: 769px) {
+  /* 데스크탑에서 사용될 스타일을 여기에 작성합니다. */
+}
+

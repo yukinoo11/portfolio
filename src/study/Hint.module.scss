@@ -1,0 +1,45 @@
+
+.hintWrap{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+.hintInner{
+    margin: 0 20px; 
+}
+.header{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left{
+    display: flex;
+    flex-flow: column;
+    margin-right:20px;
+}
+
+.hintIcon{
+    background-color: #d03600;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 0.8em;
+}
+
+.hintText{
+    flex: 1 1;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: #000;
+}
+
+  
+

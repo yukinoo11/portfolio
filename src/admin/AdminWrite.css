@@ -1,0 +1,288 @@
+h2 {
+  margin-bottom: 10px;
+}
+
+ul.write-list li {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.write-list li.write_tr:first-child {
+  border-top: 2px solid #000;
+}
+
+ul.write-list li.write_tr:last-child {
+  border-bottom: 2px solid #000;
+}
+
+.adminWrite input[type=text],
+.adminWrite textArea{
+  border: 1px solid #aaa;
+  padding: 0.6em .5em;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #555;
+  outline: none;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 4px
+}
+
+.adminWrite input[type=text]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 3px 0 dodgerBlue;
+}
+
+.adminWrite input[type=button],
+.adminWrite input[type=submit] {
+  padding: 0.45em 0.95em;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  margin: .3em 0.2em 0 0.3em;
+  transition: .3s;
+}
+
+.label-title {
+  font-weight: 700;
+  font-size: 1.1em;
+  display: block;
+  margin: 0.5em 0.55em 0em 0.85em;
+}
+
+.btn-skyblue {
+  background-color: rgba(50, 183, 207, 1) !important;
+  border: 1px solid #25aac2 !important;
+  color: #fff !important;
+}
+
+.btn-sm {
+  padding-left: .2em !important;
+  padding-right: .2em !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.adminWrite input[type=button]:hover,
+.adminWrite input[type=submit]:hover {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 3px 0 dodgerBlue;
+}
+
+.checkbox-component {
+  position: relative;
+}
+
+.checkbox-component input[type=checkBox] {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+}
+
+.checkbox-component input[type=checkBox] + label {
+  position: relative;
+  top: -0.45em;
+  left: .5em;
+  height: 20px;
+  line-height: 20px;
+}
+
+.adminWrite label {}
+
+.adminWrite .value {
+  padding: 10px 10px;
+  vertical-align: middle;
+}
+
+.preview {
+  font-size: 12px;
+}
+
+
+.fileControl {
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.file-name-field {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.file-size-field {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  padding-right: 18px;
+}
+
+.description {
+  font-size: 0.75em;
+  color: #dc5b00;
+  padding-top: 10px;
+}
+
+.imgPreview {
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+.titleImg {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.imgBtn {
+  border: 0px;
+  background-color: #fff;
+  padding: 0;
+  overflow: hidden;
+  /*위치를 넘어선 것은 안보이도록 설정*/
+  vertical-align: middle;
+}
+
+.adminWrite textArea {
+  width: 100%;
+  height: 100px;
+}
+
+.previewtop {
+  margin-bottom: 8px;
+}
+
+.checkall {
+  vertical-align: middle;
+}
+
+.preview {}
+
+.preview-footer {}
+
+.preview-control {
+  display: block;
+}
+
+.fileList-container {}
+
+.checkbox-type2 {
+  /* 실제 체크박스는 화면에서 숨김 */
+
+}
+
+.radio-btn{
+  position: absolute;
+}
+
+.radio-btn + label{
+  margin-right: .5em;
+}
+
+.radio-btn:checked + label{
+  background-color: aqua;
+}
+
+
+
+.checkbox-type2 + label {
+  /*
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  */
+}
+
+.checkbox-type2 + label:before {
+  /* 가짜 체크박스 */
+  /*
+  content: ' ';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin: -2px 8px 0 0;
+  background-color: cadetblue;
+  border-radius: 3px;
+  vertical-align: middle;
+  */
+}
+
+.checkbox-type2:checked + label:before {
+  /* 체크박스를 체크했을때 */
+  /*
+  content: '\2714';
+  color: aliceblue;
+  background-color: crimson;
+  border: 1px solid #ddd;
+  */
+}
+
+.preview-list {
+  background-color: #727881;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  width: 100%;
+  height: 161px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.fileList-container li {
+  background-color: #fff;
+  padding: 0.5em 0.85em;
+  display: inline-block;
+  position: relative;
+  margin: .25em;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.file-name-field {
+  position: relative;
+  box-sizing: border-box;
+  display: table-cell;
+}
+
+.file-delete-field {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.file-name-field input[type=checkbox] {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+
+.file-name-field label {
+  position: relative;
+  left: 5px;
+  top: 0;
+}
+
+.file-size-field {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: 40px;
+  text-align: right;
+}
+
+.hide-input {
+  display: none;
+}

@@ -1,0 +1,74 @@
+.Infomation{
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+
+    .Profile{
+        padding: 20px;
+        .myname{
+            font-size: 2em;
+        }
+    }
+    h1{
+        border-radius: 20px;
+        padding: 10px 0;
+        text-align: center;
+        border: 2px solid #69a4dc;
+        color: #4e89c1;
+        font-size: 1em;
+    }
+    li{
+        padding: 20px;
+    }
+    .wrap{
+        display: block;
+        margin: 0 20px 0 20px;
+        padding-left: 50px;
+        background: url('/images/icon_point.png') no-repeat;
+        line-height: 150%;
+
+        ul{
+            margin: 15px 0;
+            li{
+                label{
+                    width: 90px;
+                    display: inline-block;
+                    color: #fff;
+                    background-color: #ccc;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: .8em;
+                    border:1px solid #f9f9f9;
+                    margin-right: 10px;
+                }
+                padding: 0px;
+            }
+        }
+        
+        h2{
+            font-size: 1.2em;
+            color: #3e7ab3;
+        }
+        .description{
+            padding-bottom: 20px;
+            white-space: pre-wrap
+        }
+    }
+    .wrap2{
+
+        margin: 20px 0;
+
+        li{padding: 10px;
+            display: inline-block;
+            margin: 2px 10px 2px 0;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+    }
+    .date{
+        font-size: .9em;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,183 @@
+html{
+  -webkit-text-size-adjust: none;
+  font-size: 16px; /*rem 단위가 참고하는 값입니다. 따로 적지 않아도 기본은 16px입니다.*/
+  height: 100%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, '맑은고딕', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', "apercu", 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+li,ol{
+  list-style: none;
+  margin: 0;
+	padding: 0;
+}
+
+a,a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: #111;
+}
+
+button{
+  cursor: pointer;
+}
+
+#root {}
+
+.button-color{
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #545cd8 !important;
+  padding: 0.5em 1.1em;
+  color: #545cd8;
+  font-weight: 500;
+  transition: color .15s,background-color .15s,border-color .15s,box-shadow .15s;
+}
+
+.button-color:hover{
+  background-color: #545cd8;
+  color: #fff;
+}
+
+.button-close{
+  border: none;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  color: #888;
+  background: transparent;
+}
+
+select{
+  border: 1px solid #999;
+  background: url('/images/select_arrow.png') no-repeat right center #fff;
+  padding: .6em 3em .6em .6em;
+  min-width: 80px;
+  border: 1px solid #ccc;
+  border-radius: .3em;
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  appearance: none;
+}
+
+textArea{
+  border: 1px solid #aaa;
+  padding: 0.6em .5em;
+  box-sizing: border-box;
+  color: #555;
+  outline: none;
+  background-color: #fff;
+  transition: 0.3s;
+  border-radius: 4px
+}
+
+input[type='text']{
+	border: 1px solid #aaa;
+	padding: 0.6em .5em;
+	box-sizing: border-box;
+	color: #555;
+	outline: none;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+textarea, 
+input[type='text'],
+select{
+  font-size: 1.2em;
+}
+
+
+.btn{
+  color:#fff;
+  background: #727cf5;
+  border-color: #727cf5;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: .15rem;
+  box-shadow: 0 2px 2px rgba(114,124,245,0.5);
+  transition:0.3s;
+  padding: .45rem .9rem;
+  transition : color .15s ease-in-out, 
+              background-color .15s ease-in-out,
+              border-color .15s ease-in-out,
+              box-shadow .15s ease-in-out,
+              -webkit-box-shadow .15s ease-in-out;
+}
+
+.btn:hover{
+  background: #4D5BF2;
+  color: #fff;
+}
+
+/* NotFound */
+.NotFound{
+  height: 100%;
+}
+.NotFound > main{
+  height: 100%;
+  color: #555;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+.NotFound > main > .message {
+  margin-bottom: 1.2em;
+}
+.NotFound > main > .subMessage {
+  padding: 10px;
+  border-radius: 10px;
+  border:1px solid #ddd;
+  color : #000;
+  margin-bottom: 1.2em;
+  text-align: center;
+}
+
+.flex1{
+  flex: 1;
+}
+
+.imageW70 img{
+  max-width: 70px;
+}
+
+.imageW100 img{
+  max-width: 100px;
+}
+.textLeft{
+  text-align:left !important;
+}
+
+
+.header{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  height: 50px;
+  border-bottom: 1px solid #fff;
+  box-shadow: 1px 1px 3px #ddd;
+}
